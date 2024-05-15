@@ -1,0 +1,149 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>MedEase/Tracking</title>
+
+    <link rel="stylesheet" href="tracking.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+   
+   
+    <div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.htm"> </a> 
+        </div>
+        <nav >
+            <ul id="MenuItems">
+                <li><a href="index.htm">Home</a></li> 
+                <li><a href="about.html">About</a></li> 
+                <li><a href="contactus.html".html" class="button">Contact Us</a></li> 
+                <li><a href="login.html" class="">Login</a></li>
+           
+        </ul>
+        </nav>
+
+
+    </div>
+   
+</div>
+<!-- order tracking -->
+
+<div class="container-track">
+        <div class="details">
+            <div class="order">
+                <h1>order of Aztocin Medicine<span></span></h1>
+            </div>
+            <div class="date">
+                <p>Expected Arrival 01/01/2024</p>
+                <p>DHL <b>23453445667557766776</b></p>
+            </div>
+        </div>
+        <div class="track">
+            <ul id="progress" class="text-center">
+                <li class="active"></li>
+                <li class="active"></li>
+                <li class=""></li>
+                <li class=""></li>
+            </ul>
+        </div>
+
+        <div class="lists">
+            <div class="list">
+
+                <p>Order <br> Procesed</p>
+            </div>
+            <div class="list">
+
+                <p>Order <br> Shipped</p>
+            </div>
+            <div class="list">
+
+                <p>Order <br> Enroute</p>
+            </div>
+            <div class="list">
+
+                <p>Order <br> Arived</p>
+            </div>
+        </div>
+
+      
+            <a href="index.htm" class="btn" >Go to home page</a>
+       
+</div>
+<div class="footer">
+    <div class="container">
+        <a href="index.htm"><h3>MedEase </h3></a>
+        <h4>All copyright reserved 2023-24</h4>
+        <br>
+        <div class="row">
+            
+            <div class="footer-col-1">
+                <h3>Download our app</h3>
+                <p>Download App for android and ios mobile phones.</p>
+                <p></p>
+                
+            </div>
+            <div class="footer-col-2">
+                <a href="index.htm"></a>
+                <p>Our Purpose is to Sustainably Make the Pleasure and Benefits of Online Shopping.</p>
+                
+            </div>
+
+
+            <div class="footer-col-3">
+                <h3>Usefull links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog & Post</li>
+                    <li>Return & Refund</li>
+                    <li>Affliate</li>
+                    </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>Youtube</li>
+                    </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright-2024 </p>
+    </hr>
+    
+    </div>
+</div>
+
+
+
+
+
+  <!-- js for toggle memu -->
+
+  <script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight=="0px")
+        {
+            MenuItems.style.maxHeight="200px";
+        }
+            else
+            {
+     MenuItems.style.maxHeight="0px";
+    }
+    }
+    function placeOrder() {
+        alert("Thank you for placing your order!");
+    }
+</script>
+
+
+</body>
+</html>

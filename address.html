@@ -1,0 +1,242 @@
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>MedEase/Address</title>
+
+    <link rel="stylesheet" href="order.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+   
+   
+    <div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.htm"> </a> 
+        </div>
+        <nav >
+            <ul id="MenuItems">
+                <li><a href="index.htm">Home</a></li> 
+                <li><a href="about.html">About</a></li> 
+                <li><a href="contactus.html" class="button">Contact Us</a></li> 
+                <li><a href="login.html" class="">Login</a></li>
+           
+        </ul>
+        </nav>
+        <a href="ordercart.html"> <img src="https://www.shutterstock.com/image-vector/shopping-cart-vector-icon-flat-600nw-1690453492.jpg" width="40px" height="45px"></a>
+        <img src="file:///C:/Users/4robi/OneDrive/Desktop/Freshman/Images/111.png" class="menu-icon"  onclick="menutoggle()" width="25px" height="25px">
+    </div>
+   
+</div>
+
+<!-- adress form -->
+
+
+<form id="addressForm">
+    <h2>Add delivery instructions</h2>
+    <div class="form-group">
+        <label for="fullName">Full Name (First and Last Name)</label>
+        <input type="text" id="fullName" name="fullName" required>
+    </div>
+    <div class="form-group">
+        <label for="email">Mobile number</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+        <label for="address">Flat, House no., Building, Company, Apartment</label>
+        <input type="text" id="address" name="address" required>
+    </div>
+    <div class="form-group">
+        <label for="city">Area, Street, Sector, Village</label>
+        <input type="text" id="city" name="city" required>
+    </div>
+    <div class="form-group">
+        <label for="state">Landmark</label>
+        <input type="text" id="state" name="state" required>
+    </div>
+    <div class="form-group">
+        <label for="zip">Pincode</label>
+        <input type="text" id="zip" name="zip" required>
+    </div>
+    <div class="form-group">
+        <label for="country">Town/City</label>
+        <input type="text" id="country" name="country" required>
+    </div>
+    <div class="form-group">
+        <label for="country">State</label>
+        <select class="expiry-select" id="expiryYear">
+            <option value="" selected>Select your State</option>
+            <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+            <option value="Andhra Pradesh">Andhra Pradesh</option>
+            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+            <option value="Assam">Assam</option>
+            <option value="Bihar">Bihar</option>
+            <option value="Chandigarh">Chandigarh</option>
+            <option value="Chhattisgarh">Chhattisgarh</option>
+            <option value="Dadra and Nagar Haveli">Dadra and Nagar Haveli</option>
+            <option value="Daman and Diu">Daman and Diu</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Goa">Goa</option>
+            <option value="Gujarat">Gujarat</option>
+            <option value="Haryana">Haryana</option>
+            <option value="Himachal Pradesh">Himachal Pradesh</option>
+            <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+            <option value="Jharkhand">Jharkhand</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="Kerala">Kerala</option>
+            <option value="Ladakh">Ladakh</option>
+            <option value="Lakshadweep">Lakshadweep</option>
+            <option value="Madhya Pradesh">Madhya Pradesh</option>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="Manipur">Manipur</option>
+            <option value="Meghalaya">Meghalaya</option>
+            <option value="Mizoram">Mizoram</option>
+            <option value="Nagaland">Nagaland</option>
+            <option value="Odisha">Odisha</option>
+            <option value="Puducherry">Puducherry</option>
+            <option value="Punjab">Punjab</option>
+            <option value="Rajasthan">Rajasthan</option>
+            <option value="Sikkim">Sikkim</option>
+            <option value="Tamil Nadu">Tamil Nadu</option>
+            <option value="Telangana">Telangana</option>
+            <option value="Tripura">Tripura</option>
+            <option value="Uttar Pradesh">Uttar Pradesh</option>
+            <option value="Uttarakhand">Uttarakhand</option>
+            <option value="West Bengal">West Bengal</option>
+        </select>
+        
+        
+       
+    </div>
+
+
+
+    <button type="button" onclick="placeOrder()">Save Address & Place Order</button>
+</form>
+
+<br>
+
+
+ <!-- Saved Addresses Section -->
+
+ 
+ <div class="container">
+    <br>
+    <h2>Select a delivery address</h2>
+    <br>
+    <div id="savedAddresses">
+        <!-- Saved Address 1 -->
+        <div class="addressItem">
+            
+            <input type="radio" id="address1" name="savedAddress" class="addressRadio">
+        
+            <label class="addressLabel" for="address1">
+                <div>
+                    <img src="file:///C:/Users/4robi/OneDrive/Desktop/Freshman/Images/house.jpg" width="40" height="30">
+                </div>
+                <br>
+                Vipin<br>8219739956<br>Nahan<br>Himachal Pradesh<br>173001</label>
+        </div>
+        <!-- Saved Address 2 -->
+        <div class="addressItem">
+            <input type="radio" id="address2" name="savedAddress" class="addressRadio">
+            <label class="addressLabel" for="address2">
+                <div>
+                    <img src="file:///C:/Users/4robi/OneDrive/Desktop/Freshman/Images/house.jpg" width="40" height="30">
+                </div>
+                <br>
+               Sujal<br>7011290209<br>Delhi</label>
+        </div>
+    </div>
+    <a  href="payment.html" class="btn">Proceed</a>
+</div>
+
+<br>
+
+<!-- footer -->
+
+<div class="footer">
+    <div class="container">
+        <h3>MedEase</h3>
+        <h4>All copyright reserved 2023-24</h4>
+        <br>
+        <div class="row">
+            
+            <div class="footer-col-1">
+                <h3>Download our app</h3>
+                <p>Download App for android and ios mobile phones.</p>
+                <p></p>
+                <div class="app-logo">
+                    <a href="ecommerce.html">  <img src="https://cdn.freebiesupply.com/logos/large/2x/available-on-the-app-store-logo-png-transparent.png"></a>
+                  <a href="ecommerce.html">    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4vAY3456vFc2CJ2r-_Flhamdb-t9LCgzJwBI_RDp6AA&s"></a>
+                    
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <a href="ecommerce.html"><img src="file:///C:/Users/4robi/OneDrive/Desktop/Freshman/Images/logo1.png" width="80px"></a>
+                <p>Our Purpose is to Sustainably Make the Pleasure and Benefits of Online Shopping.</p>
+            </div>
+
+           
+
+            <div class="footer-col-3">
+                <h3>Usefull links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog & Post</li>
+                    <li>Return & Refund</li>
+                    <li>Affliate</li>
+                    </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>Youtube</li>
+                    </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright-2024 </p>
+    </hr>
+    
+    </div>
+</div>
+
+ <!-- js for toggle memu -->
+
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight=="0px")
+        {
+            MenuItems.style.maxHeight="200px";
+        }
+            else
+            {
+     MenuItems.style.maxHeight="0px";
+    }
+    }
+    function placeOrder() {
+        alert("First fill the address");
+    }
+</script>
+
+
+
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,234 @@
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>MedEase/Payment</title>
+
+    <link rel="stylesheet" href="order.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+   
+   
+    <div class="container">
+    <div class="navbar">
+
+            <a href="index.html"> </a> 
+        </div>
+        <nav >
+            <ul id="MenuItems">
+                <li><a href="ecommerce.html">Home</a></li> 
+                <li><a href="about.html">About</a></li> 
+                <li><a href="contactus.html" class="button">Contact Us</a></li> 
+                <li><a href="login.html" class="">Login</a></li>
+           
+        </ul>
+        </nav>
+        <a href="ordercart.html"> <img src="https://www.shutterstock.com/image-vector/shopping-cart-vector-icon-flat-600nw-1690453492.jpg" width="25px" height="25px"></a>
+
+    </div>
+   
+</div>
+
+<!-- adress form -->
+
+<form id="addressForm">
+    <h2>Add payment method  <img src="data:image/jpeg;base64,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" width="40" height="40"> <img src="https://www.investopedia.com/thmb/F8CKM3YkF1fmnRCU2g4knuK0eDY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/MClogo-c823e495c5cf455c89ddfb0e17fc7978.jpg" width="50" height="30"> </h2>
+   
+    <div class="form-group">
+        <label for="country">Select Payment Method </label>
+        <select class="expiry-select" id="expiryMonth">
+            <option selected>Debit Card</option>
+            <option>Credit Card</option>
+            <option>BHIM UPI</option>
+            <option>Netbanking</option>
+            <option>Cash on delivery</option>
+        </select>
+        
+        <div class="form-group">
+            <label for="fullName"><br>Full Name (First and Last Name)</label>
+            <input type="text" id="fullName" name="fullName" class="bold-border" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Card number</label>
+            <input type="password" id="email" name="email" class="password-input" required>
+        </div>
+        
+
+            <div class="form-group">
+                <label for="email">Expiry date</label>
+                <br>
+                <select class="expiry-select" id="expiryMonth">
+                <option>01</option>
+                <option>02</option>
+                <option>03</option>
+                <option>04</option>
+                <option>05</option>
+                <option>06</option>
+                <option>07</option>
+                <option>08</option>
+                <option>09</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+                    <!-- Other options -->
+                </select>
+                <select class="expiry-select" id="expiryYear">
+                    <option>2024</option>
+                    <option>2025</option>
+                    <option>2026</option>
+                    <option>2027</option>
+                    <option>2028</option>
+                    <option>2029</option>
+                    <option>2030</option>
+                    <option>2031</option>
+                    <option>2032</option>
+                    <option>2033</option>
+                    <option>2034</option>
+                    <option>2035</option>
+                    <option>2036</option>
+                    <option>2037</option>
+                    <option>2038</option>
+                    <option>2039</option>
+                    <option>2040</option>
+                    <option>2041</option>
+                    <option>2042</option>
+                    <option>2043</option>
+                    <option>2044</option>
+                    <!-- Other options -->
+                </select>
+            </div>
+
+
+       
+    </div>
+
+
+
+    <button type="button" onclick="Order()" >Save Card</button>
+</form>
+
+
+ <!-- Saved Addresses Section -->
+
+ 
+
+ <div class="container">
+    <br>
+     <h2>Select payment method</h2>
+     
+    <br>
+    <div id="savedAddresses">
+        <!-- Saved Address 1 -->
+        <div class="addressItem">
+            
+            <input type="radio" id="address1" name="savedAddress" class="addressRadio">
+        
+            <label class="addressLabel" for="address1">
+             <div>
+                <img src="data:image/png;base64,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" width="40" height="30">
+             </div>
+                <br>
+                SBI Bank<br>Debit Card<br>**3243<br>Rupay<br>TestUser</label>
+        </div>
+        <!-- Saved Address 2 -->
+        <div class="addressItem">
+            <input type="radio" id="address2" name="savedAddress" class="addressRadio">
+            <label class="addressLabel" for="address2">
+                <div>
+                    <img src="https://m.economictimes.com/thumb/msid-74960608,width-1200,height-900,resizemode-4,imgsize-49172/upi-twitter.jpg" width="40" height="30">
+                </div>
+                <br>
+                BHIM UPI<br>paytm<br>7678965643232@paytm<br>Testuser</label>
+        </div>
+    </div>
+    <a class="btn" onclick="placeOrder()" href="tracking.html">Proceed</a>
+   
+</div>
+
+<br>
+
+
+<br>
+<!-- footer -->
+
+<div class="footer">
+    <div class="container">
+        <h3>medEase</h3>
+        <h4>All copyright reserved 2023-24</h4>
+        <br>
+        <div class="row">
+            
+            <div class="footer-col-1">
+                <h3>Download our app</h3>
+                <p>Download App for android and ios mobile phones.</p>
+                <p></p>
+                <div class="app-logo">
+                    <a href="ecommerce.html">  <img src="https://cdn.freebiesupply.com/logos/large/2x/available-on-the-app-store-logo-png-transparent.png"></a>
+                  <a href="ecommerce.html">    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4vAY3456vFc2CJ2r-_Flhamdb-t9LCgzJwBI_RDp6AA&s"></a>
+                    
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <a href="ecommerce.html"><img src="file:///C:/Users/4robi/OneDrive/Desktop/Freshman/Images/logo1.png" width="80px"></a>
+                <p>Our Purpose is to Sustainably Make the Pleasure and Benefits of Online Shopping.</p>
+            </div>
+
+           
+
+            <div class="footer-col-3">
+                <h3>Usefull links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog & Post</li>
+                    <li>Return & Refund</li>
+                    <li>Affliate</li>
+                    </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>Youtube</li>
+                    </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright-2024 </p>
+    </hr>
+    
+    </div>
+</div>
+
+ <!-- js for toggle memu -->
+
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight=="0px")
+        {
+            MenuItems.style.maxHeight="200px";
+        }
+            else
+            {
+     MenuItems.style.maxHeight="0px";
+    }
+    }
+    function Order() {
+        alert("Please fill the credentials");
+    }
+    function placeOrder() {
+        alert("Thank you for placing your order!");
+    }
+</script>
+
+
+
+</body>
+</html>
+

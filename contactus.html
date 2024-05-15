@@ -1,0 +1,121 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>MedEase/ContactUs</title>
+    <link rel="icon" href="file:///C:/Users/4robi/OneDrive/Desktop/Freshman/Images/logo1.png" >
+    <link rel="stylesheet" href="order.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+   
+   
+    <div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <a href="ecommerce.html"> <img src="file:///C:/Users/4robi/OneDrive/Desktop/Freshman/Images/logo1.png" width="80px"></a> 
+        </div>
+        <nav >
+            <ul id="MenuItems">
+                <li><a href="ecommerce.html">Home</a></li> 
+                <li><a href="about1.html">About</a></li> 
+                <li><a href="contactus.html" class="button">Contact Us</a></li> 
+                <li><a href="new.html" class="">Login</a></li>
+           
+        </ul>
+        </nav>
+        <a href="ordercart.html"> <img src="https://www.shutterstock.com/image-vector/shopping-cart-vector-icon-flat-600nw-1690453492.jpg" width="40px" height="45px"></a>
+        <img src="file:///C:/Users/4robi/OneDrive/Desktop/Freshman/Images/111.png" class="menu-icon"  onclick="menutoggle()" width="25px" height="25px">
+    </div>
+   
+</div>
+<!-- contactus -->
+
+<!-- contactus -->
+<div class="contact-section">
+    <h3 class="title">Contact Us</h3>
+    <form action="#" method="post">
+        <input type="text" name="name" class="text-field" placeholder="Your Name" required>
+        <input type="email" name="email" class="text-field" placeholder="Your Email" required>
+        <input type="number1" name="number1" class="text-field" placeholder="Your Number" required>
+        <textarea name="message" class="text-field" placeholder="Your Message" required></textarea>
+        <input type="submit" value="Send Message" class="contact-btn">
+    </form>
+</div>
+
+
+
+
+<!-- footer -->
+
+<div class="footer">
+    <div class="container">
+        <h3>ClickNShip </h3>
+        <h4>All copyright reserved 2023-24</h4>
+        <br>
+        <div class="row">
+            
+            <div class="footer-col-1">
+                <h3>Download our app</h3>
+                <p>Download App for android and ios mobile phones.</p>
+                <p></p>
+                <div class="app-logo">
+                    <a href="ecommerce.html">  <img src="https://cdn.freebiesupply.com/logos/large/2x/available-on-the-app-store-logo-png-transparent.png"></a>
+                  <a href="ecommerce.html">    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4vAY3456vFc2CJ2r-_Flhamdb-t9LCgzJwBI_RDp6AA&s"></a>
+                    
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <a href="ecommerce.html"><img src="file:///C:/Users/4robi/OneDrive/Desktop/Freshman/Images/logo1.png" width="80px"></a>
+                <p>Our Purpose is to Sustainably Make the Pleasure and Benefits of Online Shopping.</p>
+            </div>
+
+           
+
+            <div class="footer-col-3">
+                <h3>Usefull links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog & Post</li>
+                    <li>Return & Refund</li>
+                    <li>Affliate</li>
+                    </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>Youtube</li>
+                    </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright-2024 </p>
+    </hr>
+    
+    </div>
+</div>
+
+    <!-- js for toggle memu -->
+
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight=="0px")
+        {
+            MenuItems.style.maxHeight="200px";
+        }
+            else
+            {
+     MenuItems.style.maxHeight="0px";
+    }
+    }
+</script>
+
+
+</body>
+</html>
